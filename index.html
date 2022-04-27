@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Museu Nacional</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
+    <div id="container"> <!--Inicio container---->
+
+        <header> <!--Inicio header---->
+            <div id="logo">
+                <h1><a href="">Museu Nacional</a></h1>
+            </div> 
+            
+            <nav> <!--Inicio Barra de Navegação----->
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Exposições</a></li>
+                    <li><a href="">Pesquisa</a></li>
+                    <li><a href="">Acervo</a></li>
+                    <li><a href="">Vídeos</a></li>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav> <!--Fim Barra de Navegação----->
     
+        </header> <!--Fim header---->
+
+        <div id="principal"> <!--Inicio Principal---->
+
+            <div id="conteudo"> <!--Inicio Conteúdo----->
+                <section id="capa">
+                    <img src="img/museu.png" alt="">
+                </section>
+
+                <section id="postagens">
+                    <article id="video">
+                        <h3>Vídeo: conheça o museu</h3>
+
+                    </article>
+
+                </section>
+
+            </div><!--Fim Conteúdo----->
+
+            <aside> <!--Inicio Aside---->
+                <section id="depoimento">
+                    <img src="img/depoimento.png" alt="">
+                </section>
+
+                <section id="visita"> <!--Inicio Visita----->
+                    <h4>Faça uma visita</h4>
+                    <form action="">
+                        <fieldset>
+                            <legend>Selecione uma data</legend>
+
+                            <label for="">Data</label>
+                            <input class="campo" type="text" id="data"
+                            value="dd/mm/aaaa">
+
+                            <label for="">Qtd pessoas</label>
+                            <input class="campo" style="width: 20px;" type="text" id="data"
+                            value="1">
+                        </fieldset>
+
+                        <input class="botao" type="submit" value="verificar disponbilidade">
+                    </form>
+                </section> <!--Fim Visita----->
+
+                <section id="galeria"> <!--Inicio Galeria----->
+                    <h4>Galeria de fotos</h4>
+                    <a href="">
+                        <img src="img/imagem1.jpg" alt="" height="93" width="93">
+                    </a>
+
+                    <a href="">
+                        <img src="img/imagem2.jpg" alt="" height="93" width="93">
+                    </a>
+
+                    <a href="">
+                        <img src="img/imagem3.jpg" alt="" height="93" width="93">
+                    </a>
+
+                    <a href="">
+                        <img src="img/imagem4.jpg" alt="" height="93" width="93">
+                    </a>
+                </section> <!--Fim Galeria----->
+
+            </aside> <!--Fim Aside----->
+
+        </div> <!--Fim Principal----->
+
+    </div> <!---Fim container---->
+
 </body>
 </html>
